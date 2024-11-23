@@ -8,7 +8,7 @@ after that, activate your environment using this command:
 ``` Bash
 myenv/Scripts/activate
 ```
-Then , install the `requirements.txt` file to install the dependencies into your environment:
+Then, install the `requirements.txt` file to install the dependencies into your environment:
 
 ``` Bash
  pip install -r requirements.txt
