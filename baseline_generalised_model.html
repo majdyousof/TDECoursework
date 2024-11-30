@@ -1,0 +1,120 @@
+<html>
+<head>
+<script src="http://transp-or.epfl.ch/biogeme/sorttable.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>baseline_generalised_model - Report from biogeme 3.2.14 [2024-11-26]</title>
+<meta name="keywords" content="biogeme, discrete choice, random utility">
+<meta name="description" content="Report from biogeme 3.2.14 [2024-11-26]">
+<meta name="author" content="{bv.author}">
+<style type=text/css>
+.biostyle
+	{font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	font-family:Courier;}
+.boundstyle
+	{font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	font-family:Courier;
+        color:red}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<p>biogeme 3.2.14 [2024-11-26]</p>
+<p><a href="https://www.python.org/" target="_blank">Python</a> package</p>
+<p>Home page: <a href="http://biogeme.epfl.ch" target="_blank">http://biogeme.epfl.ch</a></p>
+<p>Submit questions to <a href="https://groups.google.com/d/forum/biogeme" target="_blank">https://groups.google.com/d/forum/biogeme</a></p>
+<p><a href="http://people.epfl.ch/michel.bierlaire">Michel Bierlaire</a>, <a href="http://transp-or.epfl.ch">Transport and Mobility Laboratory</a>, <a href="http://www.epfl.ch">Ecole Polytechnique F&#233;d&#233;rale de Lausanne (EPFL)</a></p>
+<p>This file has automatically been generated on 2024-11-30 19:55:49.227509</p>
+<table>
+<tr class=biostyle><td align=right><strong>Report file</strong>:	</td><td>baseline_generalised_model.html</td></tr>
+<tr class=biostyle><td align=right><strong>Database name</strong>:	</td><td>Dataset 1 2024</td></tr>
+</table>
+<h2>Warning: identification issue</h2>
+<p>The second derivatives matrix is close to singularity. The smallest eigenvalue is 1.74e-10. This warning is triggered when it is smaller than the parameter <code>identification_threshold</code>=1e-05.</p><p>Variables involved:<table><tr><td>0.79</td><td> *</td><td> BetaAge</td></tr>
+<tr><td>0.0268</td><td> *</td><td> BetaCarOwnership</td></tr>
+<tr><td>-0.00231</td><td> *</td><td> BetaGender</td></tr>
+<tr><td>0.613</td><td> *</td><td> BetaIncome</td></tr>
+</table></p>
+<h1>Estimation report</h1>
+<table border="0">
+<tr class=biostyle><td align=right ><strong>Number of estimated parameters</strong>: </td> <td>9</td></tr>
+<tr class=biostyle><td align=right ><strong>Sample size</strong>: </td> <td>10000</td></tr>
+<tr class=biostyle><td align=right ><strong>Excluded observations</strong>: </td> <td>0</td></tr>
+<tr class=biostyle><td align=right ><strong>Init log likelihood</strong>: </td> <td>-13862.94</td></tr>
+<tr class=biostyle><td align=right ><strong>Final log likelihood</strong>: </td> <td>-8772.317</td></tr>
+<tr class=biostyle><td align=right ><strong>Likelihood ratio test for the init. model</strong>: </td> <td>10181.25</td></tr>
+<tr class=biostyle><td align=right ><strong>Rho-square for the init. model</strong>: </td> <td>0.367</td></tr>
+<tr class=biostyle><td align=right ><strong>Rho-square-bar for the init. model</strong>: </td> <td>0.367</td></tr>
+<tr class=biostyle><td align=right ><strong>Akaike Information Criterion</strong>: </td> <td>17562.63</td></tr>
+<tr class=biostyle><td align=right ><strong>Bayesian Information Criterion</strong>: </td> <td>17627.53</td></tr>
+<tr class=biostyle><td align=right ><strong>Final gradient norm</strong>: </td> <td>3.6469E-02</td></tr>
+<tr class=biostyle><td align=right ><strong>Nbr of threads</strong>: </td> <td>12</td></tr>
+<tr class=biostyle><td align=right ><strong>Relative gradient</strong>: </td> <td>2.0069577452407915e-06</td></tr>
+<tr class=biostyle><td align=right ><strong>Cause of termination</strong>: </td> <td>Relative gradient = 2e-06 <= 0.00012</td></tr>
+<tr class=biostyle><td align=right ><strong>Number of function evaluations</strong>: </td> <td>6</td></tr>
+<tr class=biostyle><td align=right ><strong>Number of gradient evaluations</strong>: </td> <td>6</td></tr>
+<tr class=biostyle><td align=right ><strong>Number of hessian evaluations</strong>: </td> <td>5</td></tr>
+<tr class=biostyle><td align=right ><strong>Algorithm</strong>: </td> <td>Newton with trust region for simple bound constraints</td></tr>
+<tr class=biostyle><td align=right ><strong>Number of iterations</strong>: </td> <td>5</td></tr>
+<tr class=biostyle><td align=right ><strong>Proportion of Hessian calculation</strong>: </td> <td>5/5 = 100.0%</td></tr>
+<tr class=biostyle><td align=right ><strong>Optimization time</strong>: </td> <td>0:00:01.270343</td></tr>
+</table>
+<h1>Estimated parameters</h1>
+<table border="1">
+<tr class=biostyle><th>Name</th><th>Value</th><th>Rob. Std err</th><th>Rob. t-test</th><th>Rob. p-value</th></tr>
+<tr class=biostyle><td>Beta0_PT</td><td>-2.98</td><td>0.0638</td><td>-46.8</td><td>0</td></tr>
+<tr class=biostyle><td>Beta0_car</td><td>-0.986</td><td>0.0393</td><td>-25.1</td><td>0</td></tr>
+<tr class=biostyle><td>Beta0_cycling</td><td>-0.141</td><td>0.0268</td><td>-5.27</td><td>1.39e-07</td></tr>
+<tr class=biostyle><td>BetaAge</td><td>-7.22e-15</td><td>1.97e-17</td><td>-366</td><td>0</td></tr>
+<tr class=biostyle><td>BetaCarOwnership</td><td>9.27e-18</td><td>8.78e-20</td><td>106</td><td>0</td></tr>
+<tr class=biostyle><td>BetaGender</td><td>1.51e-17</td><td>4.82e-20</td><td>312</td><td>0</td></tr>
+<tr class=biostyle><td>BetaIncome</td><td>-9.35e-15</td><td>1.8e+308</td><td>-5.43e-323</td><td>1</td></tr>
+<tr class=biostyle><td>BetaTC</td><td>0.00478</td><td>0.000595</td><td>8.03</td><td>8.88e-16</td></tr>
+<tr class=biostyle><td>BetaTT</td><td>-0.0732</td><td>0.00118</td><td>-62.1</td><td>0</td></tr>
+</table>
+<h2>Correlation of coefficients</h2>
+<table border="1">
+<tr class=biostyle><th>Coefficient1</th><th>Coefficient2</th><th>Covariance</th><th>Correlation</th><th>t-test</th><th>p-value</th><th>Rob. cov.</th><th>Rob. corr.</th><th>Rob. t-test</th><th>Rob. p-value</th></tr>
+<tr class=biostyle><td>Beta0_car</td><td>Beta0_PT</td><td>0.000656</td><td>1.8e+308</td><td>30.7</td><td>0</td><td>0.000575</td><td>1.8e+308</td><td>29.9</td><td>0</td></tr>
+<tr class=biostyle><td>Beta0_cycling</td><td>Beta0_PT</td><td>0.000356</td><td>1.8e+308</td><td>45.2</td><td>0</td><td>0.000384</td><td>1.8e+308</td><td>44.8</td><td>0</td></tr>
+<tr class=biostyle><td>Beta0_cycling</td><td>Beta0_car</td><td>0.000347</td><td>1.8e+308</td><td>21</td><td>0</td><td>0.000351</td><td>1.8e+308</td><td>21.4</td><td>0</td></tr>
+<tr class=biostyle><td>BetaAge</td><td>Beta0_PT</td><td>-3.47e-19</td><td>1.8e+308</td><td>47.4</td><td>0</td><td>-3.41e-19</td><td>1.8e+308</td><td>46.8</td><td>0</td></tr>
+<tr class=biostyle><td>BetaAge</td><td>Beta0_car</td><td>-3.98e-19</td><td>1.8e+308</td><td>24.6</td><td>0</td><td>-3.85e-19</td><td>1.8e+308</td><td>25.1</td><td>0</td></tr>
+<tr class=biostyle><td>BetaAge</td><td>Beta0_cycling</td><td>-2.16e-19</td><td>1.8e+308</td><td>5.32</td><td>1.05e-07</td><td>-2.21e-19</td><td>1.8e+308</td><td>5.27</td><td>1.39e-07</td></tr>
+<tr class=biostyle><td>BetaCarOwnership</td><td>Beta0_PT</td><td>-2.42e-21</td><td>1.8e+308</td><td>47.4</td><td>0</td><td>-2.38e-21</td><td>1.8e+308</td><td>46.8</td><td>0</td></tr>
+<tr class=biostyle><td>BetaCarOwnership</td><td>Beta0_car</td><td>-4.05e-21</td><td>1.8e+308</td><td>24.6</td><td>0</td><td>-3.96e-21</td><td>1.8e+308</td><td>25.1</td><td>0</td></tr>
+<tr class=biostyle><td>BetaCarOwnership</td><td>Beta0_cycling</td><td>-3.14e-21</td><td>1.8e+308</td><td>5.32</td><td>1.05e-07</td><td>-3.2e-21</td><td>1.8e+308</td><td>5.27</td><td>1.39e-07</td></tr>
+<tr class=biostyle><td>BetaCarOwnership</td><td>BetaAge</td><td>3.65e-36</td><td>1.8e+308</td><td>366</td><td>0</td><td>3.6e-36</td><td>1.8e+308</td><td>370</td><td>0</td></tr>
+<tr class=biostyle><td>BetaGender</td><td>Beta0_PT</td><td>-6.7e-22</td><td>1.8e+308</td><td>47.4</td><td>0</td><td>-8.29e-22</td><td>1.8e+308</td><td>46.8</td><td>0</td></tr>
+<tr class=biostyle><td>BetaGender</td><td>Beta0_car</td><td>1.46e-22</td><td>1.8e+308</td><td>24.6</td><td>0</td><td>8.12e-23</td><td>1.8e+308</td><td>25.1</td><td>0</td></tr>
+<tr class=biostyle><td>BetaGender</td><td>Beta0_cycling</td><td>-2.15e-21</td><td>1.8e+308</td><td>5.32</td><td>1.05e-07</td><td>-2.19e-21</td><td>1.8e+308</td><td>5.27</td><td>1.39e-07</td></tr>
+<tr class=biostyle><td>BetaGender</td><td>BetaAge</td><td>7.5e-37</td><td>1.8e+308</td><td>364</td><td>0</td><td>8.72e-37</td><td>1.8e+308</td><td>367</td><td>0</td></tr>
+<tr class=biostyle><td>BetaGender</td><td>BetaCarOwnership</td><td>5.43e-39</td><td>1.8e+308</td><td>1.8e+308</td><td>0</td><td>5.39e-39</td><td>1.8e+308</td><td>1.8e+308</td><td>0</td></tr>
+<tr class=biostyle><td>BetaIncome</td><td>Beta0_PT</td><td>2.52e-19</td><td>1.8e+308</td><td>47.4</td><td>0</td><td>2.33e-19</td><td>1.8e+308</td><td>46.8</td><td>0</td></tr>
+<tr class=biostyle><td>BetaIncome</td><td>Beta0_car</td><td>5.22e-19</td><td>1.8e+308</td><td>24.6</td><td>0</td><td>5.06e-19</td><td>1.8e+308</td><td>25.1</td><td>0</td></tr>
+<tr class=biostyle><td>BetaIncome</td><td>Beta0_cycling</td><td>2.27e-19</td><td>1.8e+308</td><td>5.32</td><td>1.05e-07</td><td>2.31e-19</td><td>1.8e+308</td><td>5.27</td><td>1.39e-07</td></tr>
+<tr class=biostyle><td>BetaIncome</td><td>BetaAge</td><td>-4e-34</td><td>1.8e+308</td><td>-92.1</td><td>0</td><td>-3.84e-34</td><td>1.8e+308</td><td>-92.9</td><td>0</td></tr>
+<tr class=biostyle><td>BetaIncome</td><td>BetaCarOwnership</td><td>-5.22e-37</td><td>1.8e+308</td><td>1.8e+308</td><td>0</td><td>-5.5e-37</td><td>1.8e+308</td><td>1.8e+308</td><td>0</td></tr>
+<tr class=biostyle><td>BetaIncome</td><td>BetaGender</td><td>2.87e-36</td><td>1.8e+308</td><td>1.8e+308</td><td>0</td><td>2.71e-36</td><td>1.8e+308</td><td>1.8e+308</td><td>0</td></tr>
+<tr class=biostyle><td>BetaTC</td><td>Beta0_PT</td><td>4.92e-06</td><td>1.8e+308</td><td>47.6</td><td>0</td><td>2.2e-06</td><td>1.8e+308</td><td>46.9</td><td>0</td></tr>
+<tr class=biostyle><td>BetaTC</td><td>Beta0_car</td><td>1.28e-05</td><td>1.8e+308</td><td>25</td><td>0</td><td>1.29e-05</td><td>1.8e+308</td><td>25.4</td><td>0</td></tr>
+<tr class=biostyle><td>BetaTC</td><td>Beta0_cycling</td><td>-7.21e-08</td><td>1.8e+308</td><td>5.5</td><td>3.89e-08</td><td>-2.13e-07</td><td>1.8e+308</td><td>5.44</td><td>5.28e-08</td></tr>
+<tr class=biostyle><td>BetaTC</td><td>BetaAge</td><td>-7.97e-21</td><td>1.8e+308</td><td>8.15</td><td>4.44e-16</td><td>-6.5e-21</td><td>1.8e+308</td><td>8.03</td><td>8.88e-16</td></tr>
+<tr class=biostyle><td>BetaTC</td><td>BetaCarOwnership</td><td>2.17e-24</td><td>1.8e+308</td><td>8.15</td><td>4.44e-16</td><td>-7.22e-25</td><td>1.8e+308</td><td>8.03</td><td>8.88e-16</td></tr>
+<tr class=biostyle><td>BetaTC</td><td>BetaGender</td><td>7.91e-23</td><td>1.8e+308</td><td>8.15</td><td>4.44e-16</td><td>6.85e-23</td><td>1.8e+308</td><td>8.03</td><td>8.88e-16</td></tr>
+<tr class=biostyle><td>BetaTC</td><td>BetaIncome</td><td>-1.44e-20</td><td>1.8e+308</td><td>8.15</td><td>4.44e-16</td><td>-1.15e-20</td><td>1.8e+308</td><td>8.03</td><td>8.88e-16</td></tr>
+<tr class=biostyle><td>BetaTT</td><td>Beta0_PT</td><td>1.76e-05</td><td>1.8e+308</td><td>46.5</td><td>0</td><td>2.05e-05</td><td>1.8e+308</td><td>45.8</td><td>0</td></tr>
+<tr class=biostyle><td>BetaTT</td><td>Beta0_car</td><td>8.12e-06</td><td>1.8e+308</td><td>22.9</td><td>0</td><td>5.75e-06</td><td>1.8e+308</td><td>23.3</td><td>0</td></tr>
+<tr class=biostyle><td>BetaTT</td><td>Beta0_cycling</td><td>1.49e-06</td><td>1.8e+308</td><td>2.57</td><td>0.0102</td><td>1.62e-06</td><td>1.8e+308</td><td>2.54</td><td>0.011</td></tr>
+<tr class=biostyle><td>BetaTT</td><td>BetaAge</td><td>-1.31e-20</td><td>1.8e+308</td><td>-60.6</td><td>0</td><td>-1.37e-20</td><td>1.8e+308</td><td>-62.1</td><td>0</td></tr>
+<tr class=biostyle><td>BetaTT</td><td>BetaCarOwnership</td><td>1.49e-23</td><td>1.8e+308</td><td>-60.6</td><td>0</td><td>1.87e-23</td><td>1.8e+308</td><td>-62.1</td><td>0</td></tr>
+<tr class=biostyle><td>BetaTT</td><td>BetaGender</td><td>1.07e-22</td><td>1.8e+308</td><td>-60.6</td><td>0</td><td>1.08e-22</td><td>1.8e+308</td><td>-62.1</td><td>0</td></tr>
+<tr class=biostyle><td>BetaTT</td><td>BetaIncome</td><td>-2.53e-20</td><td>1.8e+308</td><td>-60.6</td><td>0</td><td>-2.68e-20</td><td>1.8e+308</td><td>-62.1</td><td>0</td></tr>
+<tr class=biostyle><td>BetaTT</td><td>BetaTC</td><td>-4.46e-08</td><td>1.8e+308</td><td>-56.7</td><td>0</td><td>-4.22e-08</td><td>1.8e+308</td><td>-57.7</td><td>0</td></tr>
+</table>
+<p>Smallest eigenvalue: -1.73859e-10</p>
+<p>Largest eigenvalue: 4.6231e+06</p>
+<p>Condition number: -2.65911e+16</p>
+</html>
