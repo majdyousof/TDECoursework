@@ -3,6 +3,13 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Biogeme and analysis outputs
+/outputs/
+/*.html
+/*.pickle
+/*.iter
+/*.dat
+
 # C extensions
 *.so
 

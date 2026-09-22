@@ -1,16 +1,45 @@
-(ASSUMING WINDOWS) To start, initialise your python environment, for this project I've called it `myenv`:
+# Transport Demand and Economics
 
-``` Bash
-py -m venv myenv
+Biogeme multinomial logit analysis of travel-mode choice across car, public
+transport, cycling, and walking. The repository includes the Python
+implementation, input data, and coursework report.
+
+## Setup
+
+```bash
+cd ~/dev/TDECoursework
+uv sync
 ```
-after that, activate your environment using this command:
 
-``` Bash
-myenv/Scripts/activate
+`uv sync` creates the project environment and installs runtime and development
+dependencies, including Ruff and Pyright.
+
+## Run
+
+Run the complete report workflow:
+
+```bash
+uv run analysis
 ```
-Then, install the `requirements.txt` file to install the dependencies into your environment:
 
-``` Bash
- pip install -r requirements.txt
- ```
- This is all done in the terminal, WHERE your coursework folder is.
+Run an individual scenario:
+
+```bash
+uv run analysis --scenario baseline
+uv run analysis --scenario generalised
+uv run analysis --scenario totalcost
+uv run analysis --scenario intervention
+```
+
+Outputs are written to `outputs/`. The full workflow estimates the three model
+specifications, performs likelihood-ratio tests, and generates market-share
+plots for 400 public-transport intervention scenarios. Biogeme HTML, pickle,
+and iteration artifacts are disabled.
+
+## Checks
+
+```bash
+uv run pytest
+uv run ruff check .
+uv run pyright
+```
