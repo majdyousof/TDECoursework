@@ -1,6 +1,6 @@
 # Transport Demand and Economics
 
-Biogeme multinomial logit analysis of travel-mode choice across car, public
+Discrete choice modelling project assessing the impact of micromobility on user travel-mode choice across car, public
 transport, cycling, and walking. The repository includes the Python
 implementation, input data, and coursework report.
 
